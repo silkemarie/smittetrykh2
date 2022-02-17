@@ -28,5 +28,11 @@ public class InitData implements CommandLineRunner {
     //county1.setHref("https://api.dataforsyningen.dk/kommuner/0259");
     county1.setHref("http://localhost:8080/county/0259");
     countyRepository.save(county1);
+
+    county1.setName("København");
+    county1.setCountyCode("0101");
+    //county1.setHref("https://api.dataforsyningen.dk/kommuner/0259");
+    county1.setHref("http://localhost:8080/county/0101");
+    countyRepository.save(county1);
   }
 }
